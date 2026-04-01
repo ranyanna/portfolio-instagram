@@ -8,6 +8,6 @@ Portfólio pessoal inspirado no layout do Instagram, onde cada post representa u
 - JavaScript
 
 ## Status
-Faz parte do meu plano de 6 meses para construir um portfólio sólido
+Em desenvolvimento - faz parte do meu plano de 6 meses para construir um portfólio sólido
 
 ⸜(｡˃ ᵕ ˂ )⸝♡
