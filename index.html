@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="menu">
+    <nav class="navbar">
       <ul>
         <li>
           <a href="#inicio">Início</a>
@@ -120,6 +120,20 @@
         </div>
       </section>
     </main>
+
+    <div class="modal-container hidden">
+      <div class="janela-central">
+        <!-- imagem, nome, descrição, link, botão fechar e botao de passar ao lado etc-->
+         <img src="" alt="" class="projeto">
+         <h4 id="modal-nome"></h4>
+         <p id="descricao"></p>
+         <a id="modal-link" href="#" target="_blank">Acessar projeto</a>
+         <button class="fechar" id="close">X</button>
+         <button class="proximo" id="next">></button>
+         <button class="voltar" id="back"><</button>
+         <div id="modal-tecnologias" class="modal-tags"></div>
+      </div>
+    </div>
 
     <script src="assets/js/projects.js"></script>
     <script src="assets/js/script.js"></script>

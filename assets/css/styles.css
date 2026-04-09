@@ -45,11 +45,11 @@ nav a:hover {
 }
 
 nav ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding-left: 50px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 50px;
 }
 
 main {
@@ -116,4 +116,8 @@ main {
     height: 300px;
     object-fit: cover;
     flex-shrink: 0;
-}   
+}
+
+.hidden {
+    display: none;
+}
