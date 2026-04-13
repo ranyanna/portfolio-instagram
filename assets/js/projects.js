@@ -16,7 +16,7 @@ const projects = [
     {
         nome: "To Do List",
         imagem: "assets/img/to-do.jpg",
-        descricao: "...",
+        descricao: "Aplicação de lista de tarefas que permite adicionar, remover e organizar atividades do dia a dia.",
         link: "#",
         tecnologias: ["HTML", "CSS"]
     }

@@ -14,50 +14,50 @@
     <nav class="navbar">
       <ul>
         <li>
-          <a href="#inicio">Início</a>
+          <a href="#profile">Início</a>
         </li>
         <li>
-          <a href="#sobre">Sobre</a>
+          <a href="#about">Sobre</a>
         </li>
         <li>
-          <a href="#habilidades">Habilidades</a>
+          <a href="#skills">Habilidades</a>
         </li>
         <li>
-          <a href="#contato">Contato</a>
+          <a href="#contact">Contato</a>
         </li>
       </ul>
     </nav>
 
     <main class="container">
-      <section id="inicio" class="inicio">
+      <section id="profile" class="profile">
         <img
           src="assets/img/perfil.png"
           alt="foto de perfil"
           id="perfil"
-          class="perfil"
+          class="profile-pic"
         />
 
         <div class="profile-info">
         <h2 class="username" id="username">Ranyanna Ayala</h2>
-        <h3 class="nickname" id="nick">Ranyanna</h3>
+        <h3 class="username-handle" id="username-handle">Ranyanna</h3>
 
-        <div class="stats">
-          <div class="posts-item">
-            <span class="count">0</span>
-            <span class="label">posts</span>
+        <div class="profile-stats">
+          <div class="stat-item">
+            <span class="stat-count">0</span>
+            <span class="stat-label">posts</span>
           </div>
 
-          <div class="following-item">
-            <span class="count">0</span>
-            <span class="label">seguindo</span>
+          <div class="stat-item">
+            <span class="stat-count">0</span>
+            <span class="stat-label">seguindo</span>
           </div>
 
-          <div class="followers-item">
-            <span class="count">0</span>
-            <span class="label">seguidores</span>
+          <div class="stat-item">
+            <span class="stat-count">0</span>
+            <span class="stat-label">seguidores</span>
           </div>
         </div>
-        <div class="bio">
+        <div class="profile-bio">
           <p>Front-End 💻 | HTML • CSS • JS • React Foco, prática e café ☕</p>
           </div>
         </div>
@@ -69,8 +69,8 @@
         </div>
       </section>
 
-      <section id="sobre" class="sobre">
-        <h2 class="sobre-mim">Sobre mim</h2>
+      <section id="about" class="about">
+        <h2 class="about-title">Sobre mim</h2>
         <p>
           Sou estudante de Engenharia de Software, com foco em desenvolvimento
           Front-End. Tenho construído minha base com estudos consistentes e
@@ -89,8 +89,8 @@
         </p>
       </section>
 
-      <section id="habilidades" class="habilidades">
-        <div class="skills-front">
+      <section id="skills" class="skills">
+        <div class="skills-frontend">
           <h3>Front-End:</h3>
           <ul class="frontend">
             <li>html</li>
@@ -110,9 +110,9 @@
         </div>
       </section>
 
-      <section id="contato" class="contato">
+      <section id="contact" class="contact">
         <h2>Contato</h2>
-        <div class="contato-container">
+        <div class="contact-links">
           <a href="#" target="_blank" class="whatsapp">Whatsapp</a>
           <a href="#" target="_blank" class="email">Email</a>
           <a href="#" target="_blank" class="linkedin">Linkedin</a>
@@ -120,20 +120,6 @@
         </div>
       </section>
     </main>
-
-    <div class="modal-container hidden">
-      <div class="janela-central">
-        <!-- imagem, nome, descrição, link, botão fechar e botao de passar ao lado etc-->
-         <img src="" alt="" class="projeto">
-         <h4 id="modal-nome"></h4>
-         <p id="descricao"></p>
-         <a id="modal-link" href="#" target="_blank">Acessar projeto</a>
-         <button class="fechar" id="close">X</button>
-         <button class="proximo" id="next">></button>
-         <button class="voltar" id="back"><</button>
-         <div id="modal-tecnologias" class="modal-tags"></div>
-      </div>
-    </div>
 
     <script src="assets/js/projects.js"></script>
     <script src="assets/js/script.js"></script>
