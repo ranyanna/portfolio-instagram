@@ -28,3 +28,13 @@ projects.forEach(project => {
     card.appendChild(overlay)
     grid.appendChild(card)
 })
+
+const button = document.querySelector('button')
+const body = document.querySelector('body')
+const sun = document.querySelector('.sun')
+const moon = document.querySelector('.moon')
+button.addEventListener('click', () => {
+    body.classList.toggle('light')
+    sun.classList.toggle('hidden')
+    moon.classList.toggle('hidden')
+})

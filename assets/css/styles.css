@@ -145,3 +145,23 @@ main {
     width: 80%;
     margin: 0 auto;
 }
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-5px);
+}
+
+button img {
+    width: 30px;
+    height: 30px;
+}
