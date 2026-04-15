@@ -1,15 +1,15 @@
 :root {
-    --cor-fundo: #22231E;
-    --cor-texto: #BAB2A1;
+    --cor-fundo: #222;
+    --cor-texto: #fafafa;
     --cor-destaque: #AC1C15;
     --cor-sombra: #471507;
 }
 
 body.light {
-    --cor-fundo: #BAB2A1;
-    --cor-texto: #22231E;
+    --cor-fundo: #fafafa;
+    --cor-texto: #222;
     --cor-destaque: #AC1C15;
-    --cor-sombra: #471507;
+    --cor-sombra: #ddd;
 }
 
 * {
@@ -24,6 +24,7 @@ body {
     flex-direction: row;
     height: 100vh;
     font-family: 'Outfit', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav {
@@ -150,18 +151,18 @@ main {
     display: none;
 }
 
-button {
+.theme-toggle {
     background-color: transparent;
     border: none;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
-button:hover {
+.theme-toggle:hover {
     transform: translateY(-5px);
 }
 
-button img {
+.theme-toggle img {
     width: 30px;
     height: 30px;
 }

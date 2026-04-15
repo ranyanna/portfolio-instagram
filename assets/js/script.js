@@ -6,6 +6,7 @@ projects.forEach(project => {
 
     const img = document.createElement('img')
     img.src = project.imagem
+    img.alt = project.nome
 
     const overlay = document.createElement('div')
     overlay.classList.add('card-overlay')
@@ -29,12 +30,27 @@ projects.forEach(project => {
     grid.appendChild(card)
 })
 
-const button = document.querySelector('button')
+const button = document.querySelector('.theme-toggle')
 const body = document.querySelector('body')
 const sun = document.querySelector('.sun')
 const moon = document.querySelector('.moon')
+
+const savedTheme = localStorage.getItem('theme')
+
+if (savedTheme === 'light') {
+    body.classList.add('light')
+    sun.classList.add('hidden')
+    moon.classList.remove('hidden')
+}
+
 button.addEventListener('click', () => {
     body.classList.toggle('light')
     sun.classList.toggle('hidden')
     moon.classList.toggle('hidden')
+
+    if (body.classList.contains('light')) {
+        localStorage.setItem('theme', 'light')
+    } else {
+        localStorage.setItem('theme', 'dark')
+    }
 })
