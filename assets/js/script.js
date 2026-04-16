@@ -54,3 +54,6 @@ button.addEventListener('click', () => {
         localStorage.setItem('theme', 'dark')
     }
 })
+
+const post = document.querySelector('#post-count')
+post.textContent = projects.length
