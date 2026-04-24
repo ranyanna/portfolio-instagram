@@ -76,6 +76,11 @@ main {
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
+    box-shadow: 0 0 10px #AC1C15, 0 0 20px #AC1C15;
+}
+
+body.light .profile-pic {
+    box-shadow: 0 0 10px 5px #AC1C15;
 }
 
 .profile-info {
@@ -152,10 +157,12 @@ main {
     color: var(--cor-destaque);
     padding-bottom: 5px;
     border-bottom: 1px solid #413e3e;
+    width: fit-content;
 }
 
 .about,
-.skills {
+.skills, 
+.contact {
     margin-left: 250px;
     width: 100%;
     padding: 0 150px 30px 40px;
@@ -170,25 +177,42 @@ main {
     letter-spacing: 1px;
 }
 
-.skills-groups {
-    display: flex;
-    gap: 100px;
+.skills-icons {
     margin-top: 20px;
-}
-
-.skills h3 {
-    font-size: 15px;
-    padding-bottom: 20px;
 }
 
 .skills ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-icons li {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.skills-icons li:hover {
+    transform: translateY(-5px);
 }
 
 .skills i {
     font-size: 40px;
+}
+
+.contact-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
 }
 
 .hidden {
