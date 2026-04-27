@@ -25,7 +25,8 @@ body {
     color: var(--cor-texto);
     font-family: 'Outfit', sans-serif;
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    min-height: 100vh;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -151,8 +152,11 @@ body.light .profile-pic {
     margin: 0 auto;
 }
 
+.posts {
+    padding-bottom: 20px;
+}
+
 .section-title {
-    margin-top: 30px;
     font-size: 17px;
     color: var(--cor-destaque);
     padding-bottom: 5px;
@@ -165,7 +169,7 @@ body.light .profile-pic {
 .contact {
     margin-left: 250px;
     width: 100%;
-    padding: 0 150px 30px 40px;
+    padding: 30px 150px 30px 40px;
 }
 
 .about-texts {
@@ -175,6 +179,7 @@ body.light .profile-pic {
 .about p {
     font-size: 15px;
     letter-spacing: 1px;
+    margin-bottom: 16px;
 }
 
 .skills-icons {
@@ -215,8 +220,16 @@ body.light .profile-pic {
     letter-spacing: 1px;
 }
 
+.contact-links i {
+    transition: color 0.3s ease;
+}
+
+.contact-links a:hover i {
+    color: var(--cor-destaque);
+}
+
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .theme-toggle {
@@ -230,7 +243,25 @@ body.light .profile-pic {
     transform: translateY(-5px);
 }
 
-.theme-toggle img {
-    width: 30px;
-    height: 30px;
+.theme-toggle i {
+    font-size: 20px;
+    color: var(--cor-texto);
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover i {
+    color: var(--cor-destaque);
+}
+
+footer {
+    margin-left: 250px;
+    padding: 20px 40px;
+    border-top: 1px solid #413e3e;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 13px;
+    color: var(--cor-texto);
+    opacity: 0.5;
+    width: calc(100% - 250px);
 }
