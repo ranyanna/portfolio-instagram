@@ -338,6 +338,10 @@ footer {
         padding: 20px 15px;
     }
 
+    .skills i {
+        font-size: 30px;
+    }
+
     .contact-links {
         flex-direction: column;
     }
